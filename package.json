@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "init": "mongoimport -d pokedex -c pokemons --type csv --file Pokemon.csv --headerline --drop",
+    "init:db": "mongoimport -d pokedex -c pokemons --type csv --file Pokemon.csv --headerline --drop",
+    "init": "npm run init:db && cd backend && npm i && cd ../frontend && npm i",
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run dev"
   },
