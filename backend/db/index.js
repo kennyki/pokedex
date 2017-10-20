@@ -9,4 +9,4 @@ db.once('open', function() {
   console.log('Connected to pokedex!')
 });
 
-export default db;
+module.exports = db;
