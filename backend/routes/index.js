@@ -12,7 +12,7 @@ module.exports = function registerRoutes(app) {
       function error(e) {
         res.status(500).json({
           message: 'An unexpected error has occurred',
-          e: e
+          errors: e
         });
       });
   });

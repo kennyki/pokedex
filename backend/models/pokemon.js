@@ -8,8 +8,8 @@ var pokemonSchema = mongoose.Schema({
   'HP': String,
   'Attack': String,
   'Defense': String,
-  'Sp. Atk': String,
-  'Sp. Def': String,
+  'Sp Atk': String,
+  'Sp Def': String,
   'Speed': String,
   'Generation': String,
   'Legendary': String
