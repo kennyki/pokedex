@@ -1,0 +1,19 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "init": "mongoimport -d pokedex -c pokemons --type csv --file Pokemon.csv --headerline",
+    "start:server": "cd backend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennyki/pokedex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennyki/pokedex/issues"
+  },
+  "homepage": "https://github.com/kennyki/pokedex#readme"
+}
