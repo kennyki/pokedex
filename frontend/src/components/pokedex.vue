@@ -3,6 +3,15 @@
   .jumbotron.text-center
     h1 Welcome to the Pokedex!
     div(v-if='!isLoading')
+      hr
+      p(v-if='showLegendary')
+        span Showing
+        = ' '
+        strong: em Legendary
+      p(v-else)
+        span Showing
+        = ' '
+        strong: em everything
       button.btn.btn-primary(@click='showLegendary = !showLegendary')
         span(v-if='showLegendary') Show me everything
         span(v-else) Show only Legendary!
